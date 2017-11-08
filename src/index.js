@@ -35,7 +35,7 @@ class App extends Component {
 
 
   render() {
-
+    // this will throttle the view update as the user types in the search bar, the function will only fire every 300ms
     const videoSearch = _.debounce( (searchTerm) => {this.videoSearch(searchTerm)}, 300)
 
     return (
